@@ -2,7 +2,6 @@ import React from "react";
 import { StyledInput, StyledInputContainer, StyledLabel } from "./styleInput";
 
 export const Input = ({
-  meta,
   props,
   name,
   placeholder,
@@ -10,7 +9,6 @@ export const Input = ({
   disabled,
   errorMessage,
 }) => {
-  console.log(meta);
   return (
     <StyledInputContainer>
       <StyledLabel>{text}</StyledLabel>

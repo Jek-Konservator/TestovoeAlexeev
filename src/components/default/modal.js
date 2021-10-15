@@ -56,6 +56,12 @@ export const ModalDefault = () => {
     setVariantVisible(true);
   };
 
+  const valid = (value) => {
+    if (value.match(/^(\d){1,13}$/g) !== null) {
+      return value.match(/^(\d){1,13}$/g);
+    }
+  };
+
   return (
     <StyledModalDefault>
       <div>
@@ -76,7 +82,7 @@ export const ModalDefault = () => {
             }}
             render={({ handleSubmit, values }) => (
               <form onSubmit={handleSubmit}>
-                <Field name="salary">
+                <Field name="salary" parse={valid}>
                   {(props, meta) => (
                     <>
                       <Input
