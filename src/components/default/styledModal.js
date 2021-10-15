@@ -10,20 +10,24 @@ export const StyledModalDefault = styled.div`
   box-sizing: border-box;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 120px;
+  margin-bottom: 88px;
 
   @media screen and (min-width: 415px) and (max-width: 1024px) {
     width: 453px;
     min-height: 476px;
-    margin-top: 120px;
+    margin-bottom: 168px;
   }
 
   @media screen and (max-width: 414px) {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     border-radius: 0;
     box-sizing: border-box;
     justify-content: space-between;
     padding: 32px 16px 16px 16px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 `;
 

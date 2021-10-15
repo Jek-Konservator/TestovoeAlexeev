@@ -17,7 +17,9 @@ export const StyledCheckbox = styled.div`
   box-sizing: border-box;
   border-radius: 6px;
   :hover {
-    border: ${(props) => (props.disabled ? "none" : " 1px solid #000;")};
+    @media screen and (min-width: 1025px) {
+      border: ${(props) => (props.disabled ? "none" : " 1px solid #000;")};
+    }
   }
 
   --linear-gradientOne: linear-gradient(
@@ -26,10 +28,11 @@ export const StyledCheckbox = styled.div`
       rgba(255, 79, 79, 0) 108.93%
     ),
     #ff5e56;
+  
+  }
 `;
 
 export const Styledlabel = styled.label`
-
   input[type="checkbox"] {
     display: none;
   }
@@ -39,13 +42,12 @@ export const Styledlabel = styled.label`
   cursor: ${(props) => (props.disabled ? "default" : "pointer")};
 `;
 export const StyledCheckboxText = styled.div`
- 
   display: flex;
   cursor: ${(props) => (props.disabled ? "default" : "pointer")};
-  span{
+  span {
     color: gray;
   }
 `;
 export const TextOne = styled.label`
-    color: #000;
-`
+  color: #000;
+`;

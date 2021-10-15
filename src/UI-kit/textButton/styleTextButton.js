@@ -11,7 +11,9 @@ export const StyledText = styled.button`
   border: none;
   background: none;
   :hover {
-    color: #f53a31;
+    @media screen and (min-width: 1025px) {
+      color: #f53a31;
+    }
   }
   :active {
     color: #ea0029;

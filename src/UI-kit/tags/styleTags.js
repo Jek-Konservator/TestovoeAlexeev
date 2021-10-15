@@ -18,8 +18,10 @@ export const StyledTag = styled.button`
   user-select: none;
   font-size: 14px;
   :hover {
-    color: #000;
-    background: #dfe3e6;
+    @media screen and (min-width: 1025px) {
+      color: #000;
+      background: #dfe3e6;
+    }
   }
   :active {
     color: #fff;
@@ -35,7 +37,7 @@ export const StyledTag = styled.button`
       rgba(255, 79, 79, 0) 108.93%
     ),
     #ff5e56;
-  @media screen and (max-width: 414px) {
-    margin: 8px 8px 8px 0;
+  
+  
   }
 `;

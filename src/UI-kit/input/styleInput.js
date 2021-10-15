@@ -19,7 +19,9 @@ export const StyledInput = styled.input`
     margin: 0;
   }
   :hover {
-    border: 1px solid #000000;
+    @media screen and (min-width: 1025px) {
+      border: 1px solid #000000;
+    }
   }
   :disabled {
     border: 1px solid #808080;

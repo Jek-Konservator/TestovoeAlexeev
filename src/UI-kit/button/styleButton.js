@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledButton = styled.button`
-  
   width: ${(props) => props.size.width};
   height: ${(props) => props.size.height};
   border: ${(props) =>
@@ -18,9 +17,12 @@ export const StyledButton = styled.button`
   border-radius: 6px;
   cursor: pointer;
   :hover {
-    background: ${(props) =>
-      props.variant === "outlined" ? "#EA0029" : "#ffffff"};
-    color: ${(props) => (props.variant === "outlined" ? "#ffffff" : "#000000")};
+    @media screen and (min-width: 1025px) {
+      background: ${(props) =>
+        props.variant === "outlined" ? "#EA0029" : "#ffffff"};
+      color: ${(props) =>
+        props.variant === "outlined" ? "#ffffff" : "#000000"};
+    }
   }
   :disabled {
     background: #bec5cc;
