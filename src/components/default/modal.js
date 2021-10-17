@@ -27,7 +27,7 @@ export const ModalDefault = () => {
     if (values) {
       salary = values.salary;
     }
-    if (!salary || salary < 10000) {
+    if (!salary || salary < 12500) {
       return;
     }
 
