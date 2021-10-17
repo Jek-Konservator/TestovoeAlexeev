@@ -14,10 +14,13 @@ import { Tag } from "../../UI-kit/tags/tags";
 import { Button } from "../../UI-kit/button/button";
 import { Variant } from "./variant";
 import { IconClose } from "../../icons/iconClose";
+import { useHistory } from "react-router-dom";
 
 export const ModalDefault = () => {
   const [variantVisible, setVariantVisible] = useState(false);
   const [array, setArray] = useState([]);
+
+  const history = useHistory();
 
   const calcTaxDeduction = (values) => {
     let salary;
@@ -29,7 +32,7 @@ export const ModalDefault = () => {
     }
 
     let taxDeduction = 0;
-    let price = 1800000;
+    let price = 2300000;
     const arr = [];
     if (price * 0.13 > 260000) {
       taxDeduction = 260000;
@@ -57,9 +60,10 @@ export const ModalDefault = () => {
   };
 
   const valid = (value) => {
-    if (value.match(/^(\d){1,13}$/g) !== null) {
-      return value.match(/^(\d){1,13}$/g);
-    }
+    return value.match(/^(\d){1,13}$/g);
+  };
+  const toWelcome = () => {
+    history.push("/");
   };
 
   return (
@@ -67,7 +71,7 @@ export const ModalDefault = () => {
       <div>
         <StyledModalDefaultTitle>
           <h3>Налоговый вычет</h3>
-          <IconClose />
+          <IconClose onClick={toWelcome} />
         </StyledModalDefaultTitle>
         <StyledModalDefaultContentContainer>
           Используйте налоговый вычет чтобы погасить ипотеку досрочно. Размер
@@ -86,7 +90,6 @@ export const ModalDefault = () => {
                   {(props, meta) => (
                     <>
                       <Input
-                        meta={meta}
                         props={{ ...props.input }}
                         placeholder="Введите данные"
                         text="Ваша зарплата в месяц"
@@ -123,7 +126,6 @@ export const ModalDefault = () => {
             style={{ width: "100%" }}
             variant="outlined"
             disable={false}
-            onClick=""
           />
         </StyledModalDefaultButton>
       </div>
