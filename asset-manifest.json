@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/TestovoeAlexeev/static/js/main.8e7b0c69.chunk.js",
-    "main.js.map": "/TestovoeAlexeev/static/js/main.8e7b0c69.chunk.js.map",
-    "runtime-main.js": "/TestovoeAlexeev/static/js/runtime-main.8027e8d5.js",
-    "runtime-main.js.map": "/TestovoeAlexeev/static/js/runtime-main.8027e8d5.js.map",
-    "static/js/2.4f883498.chunk.js": "/TestovoeAlexeev/static/js/2.4f883498.chunk.js",
-    "static/js/2.4f883498.chunk.js.map": "/TestovoeAlexeev/static/js/2.4f883498.chunk.js.map",
-    "index.html": "/TestovoeAlexeev/index.html",
-    "static/js/2.4f883498.chunk.js.LICENSE.txt": "/TestovoeAlexeev/static/js/2.4f883498.chunk.js.LICENSE.txt"
+    "main.js": "/alekseevtest2/static/js/main.5e438a02.chunk.js",
+    "main.js.map": "/alekseevtest2/static/js/main.5e438a02.chunk.js.map",
+    "runtime-main.js": "/alekseevtest2/static/js/runtime-main.3ec5b9e0.js",
+    "runtime-main.js.map": "/alekseevtest2/static/js/runtime-main.3ec5b9e0.js.map",
+    "static/js/2.7f7edaaf.chunk.js": "/alekseevtest2/static/js/2.7f7edaaf.chunk.js",
+    "static/js/2.7f7edaaf.chunk.js.map": "/alekseevtest2/static/js/2.7f7edaaf.chunk.js.map",
+    "index.html": "/alekseevtest2/index.html",
+    "static/js/2.7f7edaaf.chunk.js.LICENSE.txt": "/alekseevtest2/static/js/2.7f7edaaf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8027e8d5.js",
-    "static/js/2.4f883498.chunk.js",
-    "static/js/main.8e7b0c69.chunk.js"
+    "static/js/runtime-main.3ec5b9e0.js",
+    "static/js/2.7f7edaaf.chunk.js",
+    "static/js/main.5e438a02.chunk.js"
   ]
 }
